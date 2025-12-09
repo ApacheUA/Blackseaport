@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlackSeaPort.com — Premium Domain for Maritime & Logistics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BlackSeaPort.com — premium domain for Black Sea logistics, ports, maritime analytics and multimodal transportation. Domain for sale.">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        :root {
+            --bg-main: #f7f5f1;
+            --bg-card: #ffffff;
+            --text-main: #0a1a2f;
+            --text-muted: #525b60;
+            --border-soft: #d3d6d8;
+            --accent: #f29a4a;
+            --accent-dark: #cf7c2b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Top notice */
+
+        .top-bar {
+            font-size: 0.82rem;
+            background: #ece8df;
+            color: var(--text-muted);
+            padding: 8px 0;
+            border-bottom: 1px solid #e0ddd5;
+            text-align: center;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 40px 0 56px;
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-logo-block {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .logo-mark {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 16px;
+            border-radius: 999px;
+            border: 1px solid var(--border-soft);
+            background: rgba(255,255,255,0.9);
+            width: fit-content;
+            animation: fadeDown 0.8s ease-out both;
+        }
+
+        .logo-mark img {
+            max-height: 42px;   /* логотип не больше текста */
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .logo-mark span {
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--text-muted);
+        }
+
+        .hero-title {
+            font-size: clamp(2.1rem, 3.2vw, 2.8rem);
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            animation: fadeUp 0.8s ease-out 0.05s both;
+        }
+
+        .hero-subtitle {
+            margin-top: 14px;
+            max-width: 520px;
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            animation: fadeUp 0.9s ease-out 0.12s both;
+        }
+
+        .hero-badges {
+            margin-top: 22px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .badge {
+            font-size: 0.8rem;
+            padding: 6px 12px;
+            border-radius: 999px;
+            border: 1px solid var(--border-soft);
+            background: rgba(255,255,255,0.9);
+            color: var(--text-muted);
+        }
+
+        .hero-cta {
+            margin-top: 26px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .btn-main {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            border-radius: 999px;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.96rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.16);
+            transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .btn-main:hover {
+            background: var(--accent-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+        }
+
+        .btn-main:active {
+            transform: translateY(0);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+        }
+
+        .hero-note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .hero-panel {
+            background: radial-gradient(circle at top left, #ffffff 0%, #f3f0e8 40%, #f0f2f7 100%);
+            border-radius: 22px;
+            border: 1px solid rgba(211,214,216,0.7);
+            padding: 22px 22px 20px;
+            box-shadow: 0 18px 46px rgba(10,26,47,0.12);
+            animation: fadeInSoft 0.9s ease-out 0.1s both;
+        }
+
+        .panel-label {
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .panel-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .panel-line span {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+        }
+
+        .panel-line strong {
+            font-size: 0.94rem;
+        }
+
+        .panel-divider {
+            margin: 18px 0;
+            border-bottom: 1px dashed rgba(155,161,170,0.6);
+        }
+
+        .panel-highlight {
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        /* Sections */
+
+        .section {
+            padding: 32px 0;
+        }
+
+        .section-header {
+            margin-bottom: 18px;
+        }
+
+        .section-kicker {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 600;
+        }
+
+        .section-grid {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid rgba(211,214,216,0.9);
+            padding: 18px 18px 16px;
+        }
+
+        .card small {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--text-muted);
+        }
+
+        .card h3 {
+            margin-top: 8px;
+            font-size: 1.0rem;
+        }
+
+        .card p {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Use cases */
+
+        .use-grid {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .use-card {
+            background: var(--bg-card);
+            border-radius: 14px;
+            border: 1px solid var(--border-soft);
+            padding: 16px 16px 14px;
+        }
+
+        .use-tag {
+            font-size: 0.76rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--accent-dark);
+        }
+
+        .use-card h3 {
+            margin-top: 6px;
+            font-size: 1.0rem;
+        }
+
+        .use-card p {
+            margin-top: 6px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Region */
+
+        .region-block {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: minmax(0, 2.1fr) minmax(0, 2fr);
+            gap: 24px;
+        }
+
+        .region-text p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .region-map {
+            background: var(--bg-card);
+            border-radius: 18px;
+            border: 1px solid var(--border-soft);
+            padding: 18px 18px 20px;
+        }
+
+        .map-title {
+            font-size: 0.86rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .map-graphic {
+            border-radius: 14px;
+            border: 1px dashed rgba(163,170,180,0.8);
+            padding: 14px;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        .map-ports {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            gap: 6px 14px;
+            font-size: 0.82rem;
+        }
+
+        .map-dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+            margin-right: 6px;
+        }
+
+        /* CTA bottom */
+
+        .cta {
+            margin-top: 32px;
+            padding: 28px 20px 32px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #f5efe3 0%, #f9f7f2 35%, #f1f4fb 100%);
+            border: 1px solid rgba(211,214,216,0.8);
+            text-align: center;
+        }
+
+        .cta-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .cta-text {
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .cta-actions {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .cta-mail {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .cta-mail a {
+            color: var(--accent-dark);
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 32px;
+            padding: 18px 0 26px;
+            font-size: 0.82rem;
+            color: #8a9097;
+            border-top: 1px solid #e1e0da;
+            text-align: center;
+        }
+
+        /* Animations */
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInSoft {
+            from { opacity: 0; transform: translateY(14px) scale(0.98); }
+            to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        /* Responsive */
+
+        @media (max-width: 900px) {
+            .hero-inner {
+                grid-template-columns: minmax(0,1fr);
+                gap: 28px;
+            }
+            .hero {
+                padding-top: 28px;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero {
+                padding-bottom: 40px;
+            }
+
+            .hero-title {
+                letter-spacing: 0.05em;
+            }
+
+            .hero-panel {
+                padding: 18px 16px 16px;
+            }
+
+            .section-grid,
+            .use-grid {
+                grid-template-columns: minmax(0,1fr);
+            }
+
+            .region-block {
+                grid-template-columns: minmax(0,1fr);
+            }
+
+            .cta {
+                padding: 22px 16px 24px;
+            }
+
+            .btn-main {
+                width: 100%;
+                max-width: 260px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <div class="top-bar">
+        BlackSeaPort.com is available for acquisition. For serious offers only.
+    </div>
+
+    <main class="container">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-logo-block">
+                    <div class="logo-mark">
+                        <span>Premium Domain</span>
+                    </div>
+
+                    <h1 class="hero-title">BlackSeaPort.com</h1>
+                    <p class="hero-subtitle">
+                        A concise, geo-focused name for Black Sea logistics, port services, maritime analytics and multimodal transportation.
+                    </p>
+
+                    <div class="hero-badges">
+                        <div class="badge">.com global reach</div>
+                        <div class="badge">Black Sea region</div>
+                        <div class="badge">Logistics &amp; shipping</div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a class="btn-main" href="mailto:yourplaces.net@gmail.com?subject=Offer%20for%20BlackSeaPort.com">
+                            Submit an Offer
+                        </a>
+                        <span class="hero-note">Direct owner contact: yourplaces.net@gmail.com</span>
+                    </div>
+                </div>
+
+                <aside class="hero-panel">
+                    <div class="panel-label">Domain snapshot</div>
+                    <div class="panel-line">
+                        <span>Domain</span>
+                        <strong>BlackSeaPort.com</strong>
+                    </div>
+                    <div class="panel-line">
+                        <span>Focus</span>
+                        <strong>Ports · Logistics · Maritime</strong>
+                    </div>
+                    <div class="panel-line">
+                        <span>Region</span>
+                        <strong>Black Sea &amp; EU trade corridors</strong>
+                    </div>
+
+                    <div class="panel-divider"></div>
+
+                    <p class="panel-highlight">
+                        Ideal for a shipping line, terminal operator, freight forwarder, or data &amp; news platform covering
+                        Black Sea ports and corridors.
+                    </p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- VALUE -->
+        <section class="section">
+            <header class="section-header">
+                <div class="section-kicker">Why this domain</div>
+                <h2 class="section-title">Strategic value for maritime &amp; logistics brands</h2>
+            </header>
+
+            <div class="section-grid">
+                <article class="card">
+                    <small>Geo relevance</small>
+                    <h3>Instant association with the Black Sea</h3>
+                    <p>
+                        The name anchors your brand to one of the most important grain, oil and container corridors between
+                        Europe, the Caucasus and the Middle East.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <small>Industry fit</small>
+                    <h3>Built for ports &amp; shipping</h3>
+                    <p>
+                        Perfect for terminal operators, shipping lines, 3PL/4PL providers, port communities or trade platforms.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <small>Brand &amp; SEO</small>
+                    <h3>.com authority with clear intent</h3>
+                    <p>
+                        A clean, memorable .com creates trust with partners, investors and cargo owners while carrying strong
+                        search and branding potential.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- USE CASES -->
+        <section class="section">
+            <header class="section-header">
+                <div class="section-kicker">Possible use cases</div>
+                <h2 class="section-title">What BlackSeaPort.com can become</h2>
+            </header>
+
+            <div class="use-grid">
+                <article class="use-card">
+                    <div class="use-tag">Logistics operator</div>
+                    <h3>Multimodal &amp; terminal brand</h3>
+                    <p>
+                        Position your company as a key gateway for rail, truck and sea cargo via Black Sea ports.
+                    </p>
+                </article>
+
+                <article class="use-card">
+                    <div class="use-tag">Data &amp; analytics</div>
+                    <h3>Port intelligence &amp; market insights</h3>
+                    <p>
+                        Build a portal for port statistics, line services, schedules and corridor performance.
+                    </p>
+                </article>
+
+                <article class="use-card">
+                    <div class="use-tag">Marketplace</div>
+                    <h3>Rates, services &amp; capacity platform</h3>
+                    <p>
+                        Aggregate freight rates, services and terminal capacities across the region in one trusted brand.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- REGION -->
+        <section class="section">
+            <header class="section-header">
+                <div class="section-kicker">Region</div>
+                <h2 class="section-title">Black Sea as a strategic corridor</h2>
+            </header>
+
+            <div class="region-block">
+                <div class="region-text">
+                    <p>
+                        The Black Sea basin connects EU markets with the Caucasus, Central Asia and the Middle East,
+                        combining deep-water ports, rail corridors and Ro-Ro routes.
+                    </p>
+                    <p>
+                        A domain that clearly reflects this geography and industry is a long-term asset for any company
+                        active in the region.
+                    </p>
+                </div>
+
+                <div class="region-map">
+                    <div class="map-title">Key ports &amp; hubs</div>
+                    <div class="map-graphic">
+                        Stylised map of the Black Sea region with highlighted ports and trade corridors.
+                        <div class="map-ports">
+                            <div><span class="map-dot"></span>Odesa · Ukraine</div>
+                            <div><span class="map-dot"></span>Constanta · Romania</div>
+                            <div><span class="map-dot"></span>Varna · Bulgaria</div>
+                            <div><span class="map-dot"></span>Batumi · Georgia</div>
+                            <div><span class="map-dot"></span>Samsun · Turkey</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section">
+            <div class="cta" id="contact">
+                <h2 class="cta-title">Interested in acquiring BlackSeaPort.com?</h2>
+                <p class="cta-text">
+                    The domain is available for direct sale from the owner. Serious, market-aligned offers are welcome.
+                </p>
+
+                <div class="cta-actions">
+                    <a class="btn-main" href="mailto:yourplaces.net@gmail.com?subject=Offer%20for%20BlackSeaPort.com">
+                        Submit an Offer
+                    </a>
+                </div>
+
+                <p class="cta-mail">
+                    Contact: <a href="mailto:yourplaces.net@gmail.com">yourplaces.net@gmail.com</a>
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2025 BlackSeaPort.com · Premium Domain for Maritime &amp; Logistics. Crimea is Ukraine.
+        </footer>
+
+    </main>
+</div>
+</body>
+</html>
