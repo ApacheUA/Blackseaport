@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackSeaPort.com — Loading…</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4C95KQ8SJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-C4C95KQ8SJ');
+    </script>
+
+    <style>
+        body, html {
+            margin: 0; padding: 0; height: 100%;
+            background: #ffffff;
+            color: #222;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.5;
+        }
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0.8rem auto;
+            color: #444;
+        }
+        .timer {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #0066cc;
+            margin: 30px 0;
+        }
+        .spinner {
+            border: 5px solid #f0f0f0;
+            border-top: 5px solid #0066cc;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            animation: spin 1s linear infinite;
+            margin: 30px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>BlackSeaPort.com</h1>
+        <p>Premium domain is loading…</p>
+        
+        <div class="timer">Redirecting in <span id="t">8</span> seconds</div>
+        
+        <div class="spinner"></div>
+        
+        <p><a href="https://blackseaport.com">→ Click here to continue immediately</a></p>
+    </div>
+
+    <script>
+        let t = 8;
+        const el = document.getElementById('t');
+        const interval = setInterval(() => {
+            el.textContent = t--;
+            if (t < 0) {
+                clearInterval(interval);
+                location.href = 'https://blackseaport.com';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
