@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlackSeaPort.com | Strategic Maritime Asset</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; overflow-x: hidden; }
-        .glass { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(197, 160, 89, 0.2); }
+        .glass { background: rgba(15, 23, 42, 0.4); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .gold-text { color: #C5A059; }
         .hero-bg {
             position: relative;
-            background-image: linear-gradient(rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.9)), 
+            background-image: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.95)), 
                               url('https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=2070&auto=format&fit=crop'); 
             background-size: cover;
             background-position: center;
@@ -21,93 +21,110 @@
         @media (max-width: 768px) { .hero-bg { background-attachment: scroll; } }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased selection:bg-[#C5A059] selection:text-black">
 
     <header class="hero-bg min-h-screen flex flex-col items-center justify-center text-center px-4 py-20">
-        <div class="mb-6">
-            <span class="uppercase tracking-[0.3em] text-[10px] md:text-xs font-semibold gold-text">Premium Domain Acquisition</span>
+        <div class="mb-8 opacity-80">
+            <span class="uppercase tracking-[0.4em] text-[10px] md:text-xs font-medium text-slate-400">Premium Domain Acquisition</span>
         </div>
-        <h1 class="text-4xl sm:text-6xl md:text-9xl font-light tracking-tighter mb-6" style="font-family: 'Playfair Display', serif;">
+        <h1 class="text-4xl sm:text-6xl md:text-9xl font-light tracking-tighter mb-8 text-white">
             blackseaport.com
         </h1>
-        <p class="max-w-2xl text-base md:text-2xl text-slate-300 font-light leading-relaxed mb-10">
+        <p class="max-w-2xl text-base md:text-xl text-slate-400 font-light leading-relaxed mb-12">
             The most authoritative digital address for the future of Black Sea shipping and logistics.
-            <span class="block mt-2 italic text-sm text-slate-500">Established in 2002 — Rare Legacy Asset.</span>
+            <span class="block mt-4 text-xs tracking-wider text-slate-600 uppercase">Established in 2002 — Rare Legacy Asset</span>
         </p>
         <div class="w-full max-w-xs md:max-w-none">
             <a href="mailto:yourplaces.net@gmail.com?subject=Offer%20for%20blackseaport.com" 
-               class="block md:inline-block px-10 py-4 border border-[#C5A059] text-[#C5A059] hover:bg-[#C5A059] hover:text-[#020617] transition-all duration-500 uppercase tracking-widest text-xs font-bold">
+               class="block md:inline-block px-12 py-4 border border-slate-700 text-slate-300 hover:border-[#C5A059] hover:text-[#C5A059] transition-all duration-300 uppercase tracking-[0.2em] text-xs font-medium">
                 Submit Your Offer
             </a>
         </div>
     </header>
 
-    <section class="py-24 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-5xl font-light mb-16 text-center italic" style="font-family: 'Playfair Display', serif;">Strategic Market Insight</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <h3 class="gold-text uppercase tracking-widest text-sm font-bold mb-4">A Region at a Turning Point</h3>
-                <p class="text-slate-400 leading-relaxed font-light mb-6 text-sm md:text-base">
+    <section class="py-32 px-6 max-w-6xl mx-auto">
+        <h2 class="text-2xl md:text-4xl font-light mb-20 text-center tracking-tight text-white">Strategic Market Insight</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+            
+            <!-- Left Column -->
+            <div class="flex flex-col border-l border-white/10 pl-8 md:pl-12 py-2">
+                <h3 class="text-white uppercase tracking-widest text-xs font-semibold mb-6">A Region at a Turning Point</h3>
+                <p class="text-slate-400 leading-loose font-light mb-8 text-sm">
                     The Black Sea remains a vital global trade bridge. With post-war recovery scenarios projecting a 20-30% growth in maritime traffic by 2035, this region is set to become one of the world's fastest-growing multimodal corridors.
                 </p>
-                <ul class="space-y-4 text-sm text-slate-300">
-                    <li class="flex items-start"><span class="gold-text mr-2">/</span> Deep-water upgrades in Odessa and Constanta (+40% capacity).</li>
-                    <li class="flex items-start"><span class="gold-text mr-2">/</span> Integration of Middle Corridor rail-ferry routes.</li>
-                    <li class="flex items-start"><span class="gold-text mr-2">/</span> Hub for LNG and green ammonia bunkering.</li>
+                <ul class="space-y-4 text-sm text-slate-400 font-light mt-auto">
+                    <li class="flex items-center"><span class="w-1 h-1 bg-[#C5A059] rounded-full mr-4"></span> Deep-water upgrades in Odessa and Constanta</li>
+                    <li class="flex items-center"><span class="w-1 h-1 bg-[#C5A059] rounded-full mr-4"></span> Integration of Middle Corridor rail-ferry routes</li>
+                    <li class="flex items-center"><span class="w-1 h-1 bg-[#C5A059] rounded-full mr-4"></span> Hub for LNG and green ammonia bunkering</li>
                 </ul>
             </div>
-            <div class="glass p-8 rounded-sm self-center">
-                <h3 class="text-xl font-bold mb-4 uppercase tracking-wider">Why this value will explode</h3>
-                <p class="text-slate-400 text-sm leading-loose font-light">
+
+            <!-- Right Column -->
+            <div class="flex flex-col border-l border-white/10 pl-8 md:pl-12 py-2">
+                <h3 class="text-white uppercase tracking-widest text-xs font-semibold mb-6">Why this value will explode</h3>
+                <p class="text-slate-400 leading-loose font-light mb-8 text-sm">
                     BlackSeaPort.com is the clearest, most brandable geo-domain for the entire region. The next owner will dominate branding and SEO in one of the world’s most strategic trade gateways. It’s not just a name; it’s a digital monopoly.
                 </p>
+                <div class="mt-auto">
+                    <p class="text-xs uppercase tracking-widest text-[#C5A059] font-medium">
+                        Unrivaled Authority
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-32 bg-[#01040a]">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-2xl md:text-4xl font-light mb-20 text-center tracking-tight text-white">Development Opportunities</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group p-8 border border-white/5 hover:border-[#C5A059]/30 hover:bg-white/[0.02] transition-all duration-500">
+                    <h4 class="text-white font-medium mb-3 text-xs uppercase tracking-widest group-hover:text-[#C5A059] transition-colors">Global Logistics Brand</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed font-light">Terminal operator or 4PL provider with instant geo-authority.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="group p-8 border border-white/5 hover:border-[#C5A059]/30 hover:bg-white/[0.02] transition-all duration-500">
+                    <h4 class="text-white font-medium mb-3 text-xs uppercase tracking-widest group-hover:text-[#C5A059] transition-colors">Port Intelligence</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed font-light">Real-time AIS analytics, schedules, and port reports.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="group p-8 border border-white/5 hover:border-[#C5A059]/30 hover:bg-white/[0.02] transition-all duration-500">
+                    <h4 class="text-white font-medium mb-3 text-xs uppercase tracking-widest group-hover:text-[#C5A059] transition-colors">Freight Marketplace</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed font-light">Sea + rail + truck capacity aggregator for the region.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="group p-8 border border-white/5 hover:border-[#C5A059]/30 hover:bg-white/[0.02] transition-all duration-500">
+                    <h4 class="text-white font-medium mb-3 text-xs uppercase tracking-widest group-hover:text-[#C5A059] transition-colors">News & Research Hub</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed font-light">Leading source for maritime insights and regional trade news.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="group p-8 border border-white/5 hover:border-[#C5A059]/30 hover:bg-white/[0.02] transition-all duration-500">
+                    <h4 class="text-white font-medium mb-3 text-xs uppercase tracking-widest group-hover:text-[#C5A059] transition-colors">Green Shipping</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed font-light">Decarbonisation projects and alternative fuel bunkering map.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="group p-8 border border-white/5 hover:border-[#C5A059]/30 hover:bg-white/[0.02] transition-all duration-500">
+                    <h4 class="text-white font-medium mb-3 text-xs uppercase tracking-widest group-hover:text-[#C5A059] transition-colors">Investment Advisory</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed font-light">M&A and project finance platform for regional infrastructure.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-[#01040a]">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-5xl font-light mb-16 italic" style="font-family: 'Playfair Display', serif;">Development Opportunities</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="glass p-8 text-left">
-                    <h4 class="gold-text font-bold mb-3 text-sm uppercase">Global Logistics Brand</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light">Terminal operator or 4PL provider with instant geo-authority.</p>
-                </div>
-                <div class="glass p-8 text-left">
-                    <h4 class="gold-text font-bold mb-3 text-sm uppercase">Port Intelligence</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light">Real-time AIS analytics, schedules, and port reports.</p>
-                </div>
-                <div class="glass p-8 text-left">
-                    <h4 class="gold-text font-bold mb-3 text-sm uppercase">Freight Marketplace</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light">Sea + rail + truck capacity aggregator for the region.</p>
-                </div>
-                <div class="glass p-8 text-left">
-                    <h4 class="gold-text font-bold mb-3 text-sm uppercase">News & Research Hub</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light">Leading source for maritime insights and regional trade news.</p>
-                </div>
-                <div class="glass p-8 text-left">
-                    <h4 class="gold-text font-bold mb-3 text-sm uppercase">Green Shipping</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light">Decarbonisation projects and alternative fuel bunkering map.</p>
-                </div>
-                <div class="glass p-8 text-left">
-                    <h4 class="gold-text font-bold mb-3 text-sm uppercase">Investment Advisory</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light">M&A and project finance platform for regional infrastructure.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-20 px-6 text-center border-t border-white/5">
-        <div class="mb-12">
-            <p class="text-slate-500 text-[10px] tracking-widest uppercase mb-4">Secure this asset now</p>
-            <a href="mailto:yourplaces.net@gmail.com" class="text-lg md:text-3xl font-light hover:text-[#C5A059] transition-all break-all">
+    <footer class="py-24 px-6 text-center border-t border-white/5">
+        <div class="mb-16">
+            <p class="text-slate-600 text-[10px] tracking-[0.2em] uppercase mb-6">Secure this asset now</p>
+            <a href="mailto:yourplaces.net@gmail.com" class="text-lg md:text-2xl font-light text-slate-200 hover:text-[#C5A059] transition-colors duration-300">
                 yourplaces.net@gmail.com
             </a>
         </div>
         
-        <div class="pt-12 border-t border-white/5 opacity-50">
-            <p class="text-[9px] tracking-[0.4em] uppercase mb-4">© 2026 blackseaport.com — Premium Maritime Domain</p>
-            <p class="text-xs font-bold tracking-[0.3em] uppercase gold-text">
+        <div class="max-w-md mx-auto border-t border-white/5 pt-12">
+            <p class="text-[9px] tracking-[0.3em] uppercase mb-4 text-slate-600">© 2026 blackseaport.com</p>
+            <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#C5A059] opacity-80">
                 Crimea is Ukraine
             </p>
         </div>
